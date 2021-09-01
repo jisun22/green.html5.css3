@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>css3 Property Basic</title>
+    <!-- 홈페이지만들기 -->
+    <style>
+         .font_center { text-align: center;} 
+         .font_bold {font-weight: bold;}
+         .font_center { text-align: center;}
+         .font_big { font-size: 2em; }
+         .font_right { text-align: right; }
+         .font_left { text-align: left;}
+        body{
+            width: 960px;
+            margin: 0 auto;
+            background-color:blanchedalmond;
+            
+            background-size: 100%;
+            background-repeat: no-repeat;
+            /* background-position: bottom; */
+            background-attachment: fixed;
+            background-position-x: right;
+        }
+    h1{ 
+        color:violet;
+        text-shadow: 3px 3px 3px gray;
+    }
+    h2{
+        color:blueviolet;}
+
+    ul { overflow: hidden; }
+    li {
+        list-style: none;
+        float: left; padding: 40px;
+        opacity: 0.9;
+    }
+    li:nth-child(2n) { border-radius: 1px  ; }
+    li:nth-child(2n+1) { border-radius: 1px; }
+
+    li:nth-child(2n) { background-color: skyblue;
+    color: white; }
+    li:nth-child(2n+1) { background-color: skyblue; color: white  }
+
+    li:hover {color :aquamarine}
+
+    img[src*="sugardeco"] {border: 3px solid white;}
+    img[src*="twimg"] {border: 3px solid white;}
+    img[src*="mblogthumb"] {border: 3px solid white;}
+    img[src*="media"] {border: 3px solid white;}
+    img[src*="contents"] {border: 3px solid white;}
+    
+    #section1 {
+            width: 700px;
+            float: left;} 
+    #content > #main_menu{
+        width: 960px;
+        margin: 0 auto;
+        overflow: hidden;
+        float: right;
+    }
+    #header
+    {   width: 960px;
+        margin: 0 auto;
+        overflow: hidden;
+        float: center;
+        color: black;
+        font-size:large;
+    }
+    header
+        {
+            color:whitesmoke;
+            background-color: pink
+            border-width: thin;
+            border-style: dashed;
+            border-color: white;
+            opacity: 0.7;
+            }
+            .clear {
+            clear: both;
+        }
+        #section1 {
+            width: 700px;
+            float: left;
+        }
+        #section2 {
+            width: 700px;
+            float: left;
+        }
+        #section3 {
+            width: 960px; }
+        #aside {
+            width: 200px;
+            float: right;
+        }
+        .button > a {
+            display: block;
+            line-height: 150px;}
+        .button {
+            
+            width: 200px;
+            height:  150px;
+            background-color: blanchedalmond;
+            border: 10px solid rgb(42, 141, 67);
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px #A9A9A9;
+        }
+    </style>
+</head>
+<body>
+    <div id="Lollipop"></div>
+    <a class="font_center"><h1><b>Lollipop Desert</b></h1></a>
+    <hr />
+    <ul>
+        <li><b>Cookie</b></li>
+        <li><b>Jelly</b></li>
+        <li><b>Snack</b></li>
+        <li><b>Cake</b></li>
+        <li><b>Marshmallow</b></li>
+        <li><b>Candy</b></li>
+    </ul>
+    <br />
+    <img src="https://contents.lotteon.com/itemimage/_v111406/LO/14/84/41/69/98/_1/48/44/16/99/9/LO1484416998_1484416999_1.JPG/dims/resizef/720X720" width="150" height="150" />
+    <img src="https://media.amway.co.kr/sys-master/images/ha4/h97/8965088018462/NU_295116K_640_10.jpg" width="150" height="150" />
+    <img src="https://mblogthumb-phinf.pstatic.net/MjAyMDAzMDlfMjc5/MDAxNTgzNjgxNDA0MzA1.Wk0INa8oyo6Vsaoq7meQvB6A7PxSNu_FMmCGpY6mnUwg.XFlETUiLH0BHJhbxZmYBwnkeWI_tHmGMODj2QvAFGgIg.JPEG.sugarberrys/SE-f073ce63-c045-45e4-9c36-20cb331399b1.jpg?type=w800" width="150" height="150" />
+    <img src="https://pbs.twimg.com/profile_images/1264549428527943682/5GXrIYzG_400x400.jpg" width="150" height="150" />
+    <img src="http://m.sugardeco.kr/web/product/big/201812/19bdb0106e9abc42c6354d867fb83873.jpg" width="150" height="150" />
+    
+    
+    <div id="section1">
+           <h2><b> Select </b></h2>
+           <select>
+            <option>캔디</option>
+            <option>아이스크림</option>
+            <option>쿠키</option>
+            <option>마쉬멜로우</option>
+            <option>젤리</option>
+            <option>스낵</option>
+            <option>자바칩</option>
+            <option>초콜렛</option>
+           </select><br />
+           <br />
+           <form><a class="font_italic font_bold font_right">
+            <filedesk> 
+                <legend>Please fill it out</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">이름</label></td>
+                        <td><input for="name" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">이메일</label></td>
+                        <td><input for="mail" type="email" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Address">주소</label></td>
+                        <td><input for="Address" type="Address" /></td>
+                    </tr>
+                    
+                </table>
+                <input type="submit" />
+            </filedesk>
+           </form></a>
+           <br />
+        
+
+    </div>
+    <div id="header"></div>
+    <a class="font_big font_italic font_bold font_center"><h3>ABOUT US</h3></a>
+    <a class="font_italic font_center"><P> Happiness can be found 
+        even at the darkest of times.<br />
+        It does not to dwell on
+        dreams and forget to live.<br /> </P></a>
+        <br />
+        <hr />
+       
+        <div id="SOFT">
+            <h3>section1</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt blanditiis incidunt laboriosam eos corporis commodi placeat illo facilis officia dolores. Dolorem inventore officia reprehenderit saepe laudantium doloribus consequatur repellat ut.</p>
+        </div>
+    
+        <div id="SWEET">
+            <h3>section2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt blanditiis incidunt laboriosam eos corporis commodi placeat illo facilis officia dolores. Dolorem inventore officia reprehenderit saepe laudantium doloribus consequatur repellat ut.</p>
+        </div>
+        <div class="clear"></div>
+       <hr />
+        
+        <div class="clear"></div>
+        <div id="footer"><a class="font_center"><h3><b>CONTACT US</b></h3></div></a>
+        <div id="ADDRESS">
+            <a class="font_italic font_bold font_left"><h3>OUR ADDRESS</h3></a><br />
+            <a class="font_italic font_left"><p>080.123.4567</P></a>
+           <a class="font_italic  font_left"><p>hayanangela@daum.net</P></a>
+            <a class="font_italic  font_left"><p>http://han.gela</P></a>
+                
+</body>
+</html>
