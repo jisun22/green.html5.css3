@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <script>
+//2.해당 주소에서 쿼리스트링만 분리하시오
+        
+var str = "url.html?name=javascript&no=123&porp=test&date=20211211"
+
+var noQ =url.substring(url.indexOf("?")+1, url.length);
+console.log("----2----");
+console.log(noQ);
+
+//3.각각의 쿼리스트링의 변수와 값을 콘솔에 출력하시오.(변수와 값을 굳이 분리 하지 않아도 됨)
+
+console.log("-----3-----");
+var arr = noQ.split("&")
+for (i in arr){
+    console.log(arr[i]);
+}
+
+
+//4. 쿼리스트링에서 변수는 변수끼리 배얼에 담고 값을 값끼리 
+
+    </script>
+</body>
+</html>

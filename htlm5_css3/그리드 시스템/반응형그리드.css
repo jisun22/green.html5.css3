@@ -1,0 +1,35 @@
+@charset "UTF-8" ;
+
+/* 초기화 */
+
+* {margin: 0; padding: 0; }
+body {font-family: 'Helvetca', sans-serif; }
+li{list-style: none;}
+a {text-decoration: none;}
+img {border:0;}
+ul {list-style:none;}
+
+body{
+    width: 980px;
+    margin: 0 auto; }
+
+.container {}
+.row {}
+
+.span_1, .span_2, .span_3, .span_4, .span_5, 
+.span_6, .span_7, .span_8, .span_9, .span_10, 
+.span_11, .span_12,  {}
+
+.span_1 {}
+.span_2 {}
+.span_3 {}
+.span_4 {}
+.span_5 {}
+.span_6 {}
+.span_7 {}
+.span_8 {}
+.span_9 {}
+.span_10 {}
+.span_12 {}
+.span_13 {}
+

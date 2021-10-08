@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기 만들기</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator{
+            width: 286px;
+            border: 1px solid burlywood;
+            background-color: beige;
+            padding: 3px;
+        }
+        .calculator form{
+            display: grid;
+            grid-template-columns: repeat(4, 65px);        
+            grid-auto-rows: 65px;
+            grid-gap:5px;
+        }
+        .calculator form input{
+            border: 2px solid grey;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .calculator form input:hover{
+            box-shadow: 1px 1px 2px #333;
+            color:red;
+        }
+
+        .calculator form .clear{
+            background-color: skyblue;
+        }
+        .calculator form .operator{
+            background-color:pink;
+        }
+        .calculator form .dot{
+            background-color:goldenrod;
+        }
+        .calculator form input[type='text']{
+            grid-column: span 4;
+            text-align: left;
+            padding: 0 10px;
+        }
+        .calculator form .clear{
+            grid-column: span 3;
+        }
+        .calculator form .result{
+            grid-column: span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+    <form name="forms">
+        <!-- 계산기 위 버튼 틀 만들기 -->
+        <input type="text" name="output" readonly>
+        <!-- 중간 버튼, 스타일 만들기 -->
+        <!-- 결과 나타내는 등호에 class 추가 -->
+        <input type="button" class="clear" value="c" onclick="document.forms.output.value=''">
+        <input type="button" class="operator" value="/" onclick="document.forms.output.value+='/'"> 
+        <input type="button" value="1" onclick="document.forms.output.value+='1'">
+        <input type="button" value="2"  onclick="document.forms.output.value+='2'">
+        <input type="button" value="3"  onclick="document.forms.output.value+='3'">
+        <input type="button" class="operator" value="*" onclick="document.forms.output.value+='*'">
+        <input type="button" value="4" onclick="document.forms.output.value+='4'">
+        <input type="button" value="5" onclick="document.forms.output.value+='5'">
+        <input type="button" value="6" onclick="document.forms.output.value+='6'">
+        <input type="button" class="operator" value="+" onclick="document.forms.output.value+='+'">
+        <input type="button" value="7" onclick="document.forms.output.value+='7'">
+        <input type="button" value="8" onclick="document.forms.output.value+='8'">
+        <input type="button" value="9" onclick="document.forms.output.value+='9'">
+        <input type="button" class="operator" value="-" onclick="document.forms.output.value+='-'">
+        <input type="button" class="dot" value="." onclick="document.forms.output.value+='.'">
+        <input type="button" value="0" onclick="document.forms.output.value+='0'">
+        <!-- 초기화 버튼 만들기 "document.forms.output.value=eval(document.forms.output.value)" -->
+        <input type="button" class="operator result" value="=" onclick="document.forms.output.value=eval(document.forms.output.value)">
+    </form>
+    </div>
+
+
+    <script>
+    </script>
+</body>
+</html>

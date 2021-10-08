@@ -1,0 +1,149 @@
+@charset "UTF-8" ;
+
+/* 초기화 */
+
+* {margin: 0; padding: 0; }
+body {font-family: 'Helvetca', sans-serif; }
+li{list-style: none;}
+a {text-decoration: none;}
+
+.font_center { text-align: center;} 
+.font_big { font-size: 1.2em; }
+.font_medium { font-size: 1em; }
+.font_small { font-size: 0.7em; }
+.font_center { text-align: center;} 
+.font_bold {font-weight: bold;}
+.font_right { text-align: right; }
+.font_left { text-align: left;}
+        body{
+            width: 960px;
+            margin: 0 auto;
+        }
+#main_gnb >ul {overflow: hidden;}
+        #main_gnb >ul > li {float: right;}
+        #main_gnb >ul > li> a {
+            color: black;
+            display: block;
+            padding: 1px 1px;
+            border: 5px solid white;
+        }
+
+        #main_gnb >ul > li>:hover { color:blueviolet}
+
+#main_top > ul {overflow: hidden;}
+        #main_top >ul > p {float: left;}
+        #main_top >ul > p
+        {  
+            color: purple;
+            display: block;
+            padding: 5px 5px;
+            border: 1px solid black 
+            
+        }
+        #main_top >ul > p {border-radius: 10px 10px 10px 10px; }
+
+        img[src*="pstatic"] {border: 3px solid white;
+           
+                display: block;
+                margin: 0 auto;
+        }
+        
+      
+        
+        #main_gnb > ul.left {
+            overflow: hidden;
+            float: left;
+        }
+        #main_gnb > ul.right {
+            overflow: hidden;
+            float: right;
+        }
+        #main_gnb > ul.left > li { float:left; }
+        #main_gnb > ul.right > li { float:left; }
+        
+        /* a 태그 설정 */
+        #main_gnb a {
+            /* 레이아웃 설정 */
+            display: block;
+            padding: 10px 20px;
+        
+            /* 색상 설정 */
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            color:black;
+            font-weight: bold
+        }
+
+        
+        #adress2 {overflow: hidden;}
+        #adress2 > #kaka {float: left;}
+        .kaka{
+            box-sizing: border-box;
+            color: black;
+            width: 100px; height:30px;
+            background-color: white;
+            margin: 2px;
+            padding: 5px ;
+            border: 1px solid gray;
+            font-size: 0.8em;
+            
+        }
+        #main_foot >ul > li>:hover { color:blueviolet}
+
+        #adress2 {overflow: hidden;}
+        #adress2 > #answer {float: left;}
+        .answer{
+            box-sizing: border-box;
+            color: black;
+            width: 100px; height:30px;
+            background-color: white;
+            margin:2px;
+            padding: 5px ;
+            border: 1px solid gray;
+            font-size: 0.8em;
+            
+        }
+
+
+
+
+        #adress2 {overflow: hidden;}
+        #adress2 > #many {float: left;}
+        .many{
+            box-sizing: border-box;
+            color: black;
+            width: 100px; height:30px;
+            background-color: white;
+            margin: 2px;
+            padding: 5px ;
+            border: 1px solid gray;
+            font-size: 0.8em;
+            
+        }
+
+    
+    #foot {  width: 200x; height: 100px;
+        position: absolute;
+        background-color: white;
+       left: 600px; top: 930px; 
+    }
+
+      #custom {overflow: hidden;}
+       #custom{float: left;}
+       #custom {
+            color: black; }
+
+      #main_foot > ul.right > li { float:right; }
+      
+      #main_foot a {
+        /* 레이아웃 설정 */
+        display: block;
+        padding: 5px 5px;
+    
+        /* 색상 설정 */
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        color:gray;
+        font-weight: bold;
+        font-size: 0.2em;
+    }

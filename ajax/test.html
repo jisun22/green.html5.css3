@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<div>
+    <span>온도:</span>
+    <span id="temp"></span>
+    <br />
+    <span>바람:</span>
+    <span id="wind"></span>
+    <br />
+    <span>맑음/흐림여부:</span>
+    <span id="main"></span>
+    <br />
+    <span>위도:</span>
+    <span id="lat"></span>
+    <br />
+    <span>경도:</span>
+    <span id="lon"></span>
+    <br />
+    <span>습도:</span>
+    <span id="humidity"></span>
+    <br />
+    <span>아이콘:</span>
+    <span id="icon"></span>
+    <br />
+    <span>도시id:</span>
+    <span id="city_id"></span>
+</div>
+<body>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        var url = "https://api.openweathermap.org/data/2.5/weather"
+            url += "?q={Incheon}";
+            url += "&appid=f98e648c60dee9415db3b65e1176b86ca";
+            url += "&units=metric";
+            url += "&lang=kr";
+               
+        $.ajax({
+            type:"GET",
+            url: url,
+            dataType:"json",
+            success:function(data) {
+                     //정상 응답시 처리 작업
+                     console.log(data);
+
+                     $('#temp').text(data.main.temp + "");
+                     $('#wind').text(data.wind.speed +"m/s");
+                     $('#mian').text(data.weather[0].description);
+                     $('#lat').text(data.coord.lat);
+                     $('#lon').text(data.coord.lon);
+                     $('#humidity').text(data.main.humidity);
+                     $('#icon').text(data.weather[0].icon);
+                     $('#city_id').text(data.id);
+
+                 
+                },
+                error: function(request, status, error) {
+                    //응답 에러시 처리 작업
+                    console.log("code:"+request,status);
+                    console.log("message:"+request,reponseText);
+                    console.log("error:"+error);
+                },
+
+                complete:function(data,textStatus) {
+                    //작업 완료 후 처리 작업
+                    //
+                }
+        });
+    </script>
+</body>
+</html>

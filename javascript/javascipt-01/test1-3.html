@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1-1</title>
+</head>
+
+<body>
+
+<script>
+    var grade = prompt("학년을 입력하세요","0");
+    var score = prompt("점수를 입력하세요","0");
+    var msg = "error";
+
+   if (0 <= score && score <= 100) {
+     if(grade == 4 && score >=70){
+        msg = "합격"; 
+          } else if ((grade < 4 || grade > 4) && score >= 60){
+           msg ="합격"; 
+          } else {
+             msg = "불합격";
+          }
+              
+            
+        } else{
+            alert(msg);
+           
+        }
+
+
+
+
+
+
+
+
+    //        else if(score >=60) { 
+    //      document.write("합격");
+    //       }else if
+    //          document.write("불합격"); 
+         
+    //     }else if
+    //      document.write("불합격");
+    //  } else(0 > score > 100) {
+    //      alert("error");
+    //      location.reload();
+    //  }
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+<body>
+
+    <h1><b>몸무게 계산기</b></h1>
+       
+    <script>
+    var userHeight = 160;
+    var userWeight = 50;
+    
+    var normal_w = (userHeight - 100)*0.9;
+    document.write(normal_w);
+    
+    var str = "<table border='1'>";
+        str += "<tr>";
+        str += "<td>이름</td><td>신장</td><td>몸무게</td><td>평균체중</td><td>결과</td>"; 
+        str += "</tr>";
+        str += "<tr>";
+        str += "<td>" + name + "</td><td>"160"</td><td>"50"</td><td>"+ normal_w +"</td><td>"적정체중입니다."</td>";
+        str += "</tr>";
+        str += "</table>";
+        document.write(str);
+    </script>
+</body>
+</html>

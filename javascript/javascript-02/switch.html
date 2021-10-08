@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1-1</title>
+</head>
+
+<body>
+
+<script>
+    var site = prompt ("naver, daum, nate, google","");
+    var url;
+
+    switch(site){
+    case"google":url="wwww.goole.com";
+    break;
+    case"daum":url="wwww.daum.net";
+    break;
+    case"naver":url="wwww.naver.com";
+    break;
+    case"nate":url="wwww.nate.com";
+    break;
+    default: alert("not");
+    }
+
+    if(url)location.href="http://" + url;
+</script>
+
+</body>
+</html>
