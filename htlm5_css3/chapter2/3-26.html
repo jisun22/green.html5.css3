@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+        ul { overflow: hidden; }
+        li {
+            list-style: none;
+            float: left; padding: 15px;
+        }
+        li:nth-child(2n) { border-radius: 1px  ; }
+        li:nth-child(2n+1) { border-radius: 1px; }
+
+        li:nth-child(2n) { background-color: pink; }
+        li:nth-child(2n+1) { background-color: papayawhip; }
+
+        li:hover {color :aquamarine}
+
+    </style>
+</head>
+<body>
+    <hr />
+    <ul>
+        <li><b>song gang</b></li>
+        <li><b>seo joon</b></li>
+        <li><b>sae jong</b></li>
+        <li><b>bo gum</b></li>
+        <li><b>jung suck</b></li>
+        <li><b>dong won</b></li>
+    </ul>
+</body>
+</html>
